@@ -9,10 +9,11 @@ $ npm i github:yaas-dev/prebuilt-bot
 
 And then create this file structure:
 ```
-# index.js
-# package.json    ~ This assumes you already did npm init
-# commands
-## test.js
+.
+├── index.js
+├── package.json    ~ This assumes you already did npm init
+└── commands
+    └── test.js
 ```
 
 In `index.js`:
