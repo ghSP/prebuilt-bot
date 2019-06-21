@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const Handler = require('@yaas/command-handler');
 
 module.exports = class Bot {
-  constructor(token, customOptions, clientOptions) {
+  constructor(token, customOptions, clientOptions = {}) {
     // Must put empty object in `clientOptions` if not using any
     this.client = new Discord.Client(clientOptions);
     this.CH = new Handler(customOptions);
